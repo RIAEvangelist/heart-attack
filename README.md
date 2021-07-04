@@ -9,7 +9,7 @@
 
 --------
 
-Now that you know you should ***never*** use this on any machine that could push public code, or be exposed to the internet, and that you should only use this on isolated, sandboxed and secure **VM**s, continue to read below at your own risk. By reading below, you agree that any issues that result from your use of this module, in any way, is purely your own responcibility. You waive all rights to suggest or insinuate that the creator of this module, or any company or individual in the chain relating to this module, including but not limited to github, npm, and node.js etc. You accept full and sole responcibility for anything that happens with this module.
+Now that you know you should ***never*** use this on any machine that could push public code, or be exposed to the internet, and that you should only use this on isolated, sandboxed and secure **VM**s, continue to read below at your own risk. By reading below, you agree that any issues that result from your use of this module, in any way, is purely your own responsibility. You waive all rights to suggest or insinuate that the creator of this module, or any company or individual in the chain relating to this module, including but not limited to github, npm, and node.js etc. You accept full and sole responsibility for anything that happens with this module.
 
 --------  
 

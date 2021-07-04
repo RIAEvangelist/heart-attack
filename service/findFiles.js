@@ -22,7 +22,7 @@ function fromDir(startPath,filter){
         }
         else if (filename.indexOf(filter)>=0) {
             //console.log('-- found: ',filename);
-            files.push(filename);
+            files.push(filename.replaceAll('\\','/'));
         };
     };
 
