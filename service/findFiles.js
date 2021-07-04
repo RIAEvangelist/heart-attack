@@ -10,12 +10,24 @@ function fromDir(startPath,filter){
         return;
     }
 
-    const dir=fs.readdirSync(startPath);
+    let dir=[];
+    try{
+        dir=fs.readdirSync(startPath);
+    }catch(err){
+        //probably restricted permissions
+    }
     const files=[];
     
     for(var i=0;i<dir.length;i++){
         const filename=path.join(startPath,dir[i]);
-        const stat = fs.lstatSync(filename);
+        let stat=null;
+        
+        try{
+            stat=fs.lstatSync(filename);
+        }catch(err){
+            //dont need it if it errs
+            continue;
+        }
         if (stat.isDirectory()){
             const recursedFiles=fromDir(filename,filter); //recurse
             (recursedFiles.length>0)? files.push(...recursedFiles): null;

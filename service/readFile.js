@@ -1,11 +1,22 @@
 import fs from 'fs';
 
 function read(path,type){
-    const rawdata = fs.readFileSync(path,'utf8');
+    let rawdata = '';
+    try{
+        fs.readFileSync(path,'utf8');
+    }catch(err){
+        (type=='JSON')? rawdata={}:null;
+        return rawdata;
+    }
     let parsedData=null;
     switch(type){
         case 'JSON' : 
-            parsedData = JSON.parse(rawdata);
+            try{
+                parsedData = JSON.parse(rawdata);
+            }catch(err){
+                //weird JSON
+                parsedData={}
+            }
         break;
         case 'HTML' :
 
