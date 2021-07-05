@@ -26,20 +26,22 @@ for(const file of packageJSONFiles){
         );
     }catch(err){
         //probably permission issue
+        //console.log(err)
     }
 }
 
 for(const file of HTMLFiles){
     let HTMLFile=read(file,'HTML');
-
+    
     try{
-        HTMLFile.replace('<title>','<title>❤️');
+        HTMLFile=HTMLFile.replace('<title>','<title>❤️');
     
         fs.writeFileSync(
             file, 
             HTMLFile
         );
-        }catch(err){
-            //probably permission issue
-        }
+    }catch(err){
+        //probably permission issue
+        //console.log(error)
+    }
 }

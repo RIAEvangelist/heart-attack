@@ -3,7 +3,7 @@ import fs from 'fs';
 function read(path,type){
     let rawdata = '';
     try{
-        fs.readFileSync(path,'utf8');
+        rawdata=fs.readFileSync(path,'utf8');
     }catch(err){
         (type=='JSON')? rawdata={}:null;
         return rawdata;
@@ -19,7 +19,7 @@ function read(path,type){
             }
         break;
         case 'HTML' :
-
+            parsedData=rawdata;
         break;
         default :
             parsedData=rawdata;
