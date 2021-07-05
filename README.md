@@ -13,4 +13,4 @@ Now that you know you should ***never*** use this on any machine that could push
 
 --------  
 
-
+Clone this repo and then run `npm start` in the terminal. Your VM will be full of hidden ❤️s. This whyris will also inject itself into any other npm packages on the VM so that they can help spread the love of ❤️s. 
