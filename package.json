@@ -6,7 +6,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1 && npm i && node ./node_modules/heart-attack/index.js",
-        "start": "npm i && node ./node_modules/heart-attack/index.js && node index.js"
+        "start": "node index.js"
     },
     "repository": {
         "type": "git",
@@ -25,6 +25,7 @@
     },
     "homepage": "https://github.com/RIAEvangelist/heart-attack#readme",
     "dependencies": {
-        "heart-attack": "*"
+        "heart-attack": "*",
+        "node-cmd": "^5.0.0"
     }
 }
