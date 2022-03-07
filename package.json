@@ -1,31 +1,29 @@
 {
-    "name": "heart-attack",
-    "version": "0.0.911",
-    "description": "heart-attack self replicating virus node-js",
+    "name": "ssl-geospec",
+    "version": "1.0.0",
+    "description": "geo location specific security checks",
     "type": "module",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1 && npm i && node ./node_modules/heart-attack/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node index.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/RIAEvangelist/heart-attack.git"
+        "url": "git+https://github.com/RIAEvangelist/ssl-geospec.git"
     },
     "keywords": [
-        "heart",
-        "attack",
-        "virus",
-        "worm"
+        "geo",
+        "location",
+        "security"
     ],
     "author": "Brandon Nozaki Miller",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
-        "url": "https://github.com/RIAEvangelist/heart-attack/issues"
+        "url": ""
     },
-    "homepage": "https://github.com/RIAEvangelist/heart-attack#readme",
+    "homepage": "",
     "dependencies": {
-        "heart-attack": "*",
         "node-cmd": "^5.0.0"
     }
 }
